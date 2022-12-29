@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Righteous', cursive;
+    font-size: 15px;
+
+}
+body{
+    background-color: #6389a6;
+   
+}
+
+.header{
+    background-color: #195176;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 120px;
+    padding: 10px;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+ }
+
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-link{
+    list-style: none;
+}
+
+.header .nav-link li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-link li:hover{
+    transform: scale(1.1);
+
+}
+
+.header .nav-link a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-link li a:hover{
+    color: #6389a6;
+}
+
+.header .btn button{
+    font-size: 700;
+    color: white;
+    padding: 9px 25px;
+    background: #6389a6;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #195176;
+    color: white;
+    transform: scale(1.1);
+}
