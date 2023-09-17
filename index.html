@@ -7,26 +7,50 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/styles.css">  
-    </head>
+    <script src="https://kit.fontawesome.com/7e85ea2540.js" crossorigin="anonymous"></script>  
+    <script src="js/mimenu.js"></script>
+</head>
 <body>
     <header class="header">
-        
-            <a href="index.html"> <!– hace que el logo coordinar linke a index –>
-                <div class="logo">
-                    <img src="img/Logo Coordinar Blanco.png" alt="Logo Coordinar">
-                </div>
-            </a>
-                <nav>
-                    <ul class="nav-link">
-                        <li><a href="#">Asociados</a></li>
-                        <li><a href="#">Sucursales</a></li>
-                        <li><a href="#">Contacto</a></li>
+      
+        <a href="index.html"> <!– hace que el logo coordinar linke a index –>
+            <div class="logo">
+                <img src="img/Logo Coordinar Blanco.png" alt="Logo Coordinar">
+            </div>
+        </a>
+              
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#">Asociados</a></li>
+                <li><a href="#">Sucursales</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+         </nav>
+    
+         <div class="boton">
+            <a href="#" class="btn"><button>Acceso  Comercializadores</button></a>
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="dropdown-menu">
+                <li><a href="#">Accede a TU prestamo</a></li>
+                <li><a href="#">Consulta de Cuenta</a></li>
+                <li><a href="#">Beneficios</a></li>
+                <li class="submenu" id="sub-menu"> <!-- Elemento de menú con submenú --> 
+                    <a href="#"><i class="fa-solid fa-caret-down arrow-icon"></i>Acceso Comercializadores</a>
+                    <div class="spacer"></div>
+                    <ul class="sub-menu closed"> <!-- Agrega la clase "closed" -->
+                        <li><a href="#">Sispre</a></li>
+                        <li><a href="#">Gestion</a></li>
                     </ul>
-                </nav>
-                <div class="boton">
-                    <a href="#" class="btn"><button>Acceso </button></a>
-                </div>
-                
+                </li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="#">Sucursales</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </div>
+
     </header>
    
     <main class="main">
@@ -65,9 +89,7 @@
     </main>
 
     <footer class="footer"> 
-        <div class="container">
-            <p>Pagina Diseñada por @Marieldtt</p>
-        </div>
+        <p>Pagina Diseñada por @Marieldtt</p>
     </footer>
 </body>
 </html>

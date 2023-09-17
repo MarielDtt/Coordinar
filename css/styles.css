@@ -89,10 +89,110 @@ body{
     padding-top: 130px;
 }
 
+.menu-toggle i.fa-bars { /*icono menu en blanco */
+    color: white;
+}
+.menu-toggle {
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    right: 10px; 
+
+}
+
+.header .menu-toggle {
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    
+}
+
+.header .menu-toggle i {
+    font-size: 24px;
+}
+
+.header .menu-toggle i:hover {
+    transform: scale(1.1);
+}
+
+
+/* Estilos para el menú desplegable */
+.menu-toggle .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(25, 81, 118, 0.7); /* Cambiamos el nivel de transparencia */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 12px; /* Ajusta la posición vertical del menú desplegable */
+    list-style: none; /* Elimina las viñetas de la lista */
+    width: 300px; /* Ajusta el ancho del menú desplegable */
+    padding: 10px;
+    border-radius: 10px; /* Agrega bordes redondeados */
+    right: 40px; /* Alineamos el menú a la derecha */
+}
+
+.menu-toggle .dropdown-menu li {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.8); /* Cambiamos el color de fondo de los elementos del menú y su transparencia */
+    transition: background-color 0.3s; /* Agregamos una transición para suavizar el cambio de color de fondo */
+    border-bottom: 1px solid #195176; /* Agregamos una línea fina del mismo color del header entre elementos */
+    border-radius: 10px; /* Agrega bordes redondeados */
+}
+
+/* Cambiamos el color del texto del menú a negro */
+.menu-toggle .dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilos para el botón de menú */
+.menu-toggle i {
+    cursor: pointer;
+}
+.menu-toggle .dropdown-menu li:hover {
+    background-color: rgba(25, 81, 118, 0.9); /* Cambiamos la transparencia al pasar el ratón por encima */
+ }
+
+ .menu-toggle .dropdown-menu li:hover a { /*cuando paso el mouse cambia la fuente a blanco */
+    color: white;
+}
+
+.menu-toggle .dropdown-menu .submenu a i {
+    float: right; /* Alinea el icono a la derecha */
+    margin-left: 10px; /* Agrega un espacio entre el texto y el icono (ajusta según sea necesario) */
+}
+
+.menu-toggle .dropdown-menu .submenu .spacer {
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+
+/* Ocultar el submenú por defecto */
+.sub-menu {
+    display: none;
+    list-style: none; /* Elimina las viñetas de la lista */
+    text-align: center;
+}
+
+/* Establece el color del ícono de "Acceso Comercializadores" en negro */
+.menu-toggle .arrow-icon {
+    color: black;
+}
+.menu-toggle .dropdown-menu li:hover a .arrow-icon{ /*cuando paso el mouse cambia el icono a blanco */
+    color: white;
+}
+
+
+
 .footer{
     background-color: #195176 ;
     padding: 10px;
     font-size: 1px;
     color: #fff;
 }
+
+
 
