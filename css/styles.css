@@ -185,6 +185,29 @@ body{
     color: white;
 }
 
+.menu-toggle .dropdown-menu.opened {
+    background-color: #195176; /* Esta parte ya no es necesaria */
+}
+
+/* Cambia el color del texto del submenú cuando está abierto */
+.menu-toggle .dropdown-menu .submenu:hover .sub-menu li a {
+    color: black;
+}
+
+/* Cambia el color del texto del submenú a blanco al pasar el ratón sobre las opciones */
+.menu-toggle .dropdown-menu .submenu:hover .sub-menu li:hover a {
+    color: white;
+}
+
+/* Cambia el color del texto del submenú de "Quienes Somos" cuando está abierto */
+.menu-toggle .dropdown-menu .submenu#quienes-somos-menu:hover .sub-menu li a {
+    color: black;
+}
+
+/* Cambia el color del texto del submenú de "Quienes Somos" a blanco al pasar el ratón sobre las opciones */
+.menu-toggle .dropdown-menu .submenu#quienes-somos-menu:hover .sub-menu li:hover a {
+    color: white;
+}
 
 
 .footer{

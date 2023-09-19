@@ -13,7 +13,7 @@
 <body>
     <header class="header">
       
-        <a href="index.html"> <!– hace que el logo coordinar linke a index –>
+        <a href="index.html"> <!-- Hace que el logo coordinar linkee a index -->
             <div class="logo">
                 <img src="img/Logo Coordinar Blanco.png" alt="Logo Coordinar">
             </div>
@@ -28,26 +28,44 @@
          </nav>
     
          <div class="boton">
-            <a href="#" class="btn"><button>Acceso  Comercializadores</button></a>
+            <a href="#" class="btn"><button>Acceso Comercializadores</button></a>
         </div>
 
         <div class="menu-toggle">
             <i class="fa-solid fa-bars"></i>
             <ul class="dropdown-menu">
-                <li><a href="#">Accede a TU prestamo</a></li>
+                <li><a href="#">Accede a TU préstamo</a></li>
                 <li><a href="#">Consulta de Cuenta</a></li>
                 <li><a href="#">Beneficios</a></li>
                 <li class="submenu" id="sub-menu"> <!-- Elemento de menú con submenú --> 
                     <a href="#"><i class="fa-solid fa-caret-down arrow-icon"></i>Acceso Comercializadores</a>
                     <div class="spacer"></div>
-                    <ul class="sub-menu closed"> <!-- Agrega la clase "closed" -->
+                    <ul class="sub-menu">
                         <li><a href="#">Sispre</a></li>
-                        <li><a href="#">Gestion</a></li>
+                        <li><a href="#">Gestión</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quienes Somos</a></li>
-                <li><a href="#">Sucursales</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li class="submenu quienes-somos"> <!-- Elemento de menú con submenú para "Quienes Somos" -->
+                    <a href="#"><i class="fa-solid fa-caret-down arrow-icon"></i>Quienes Somos</a>
+                    <div class="spacer"></div>
+                    <ul class="sub-menu closed"> <!-- Agrega la clase "closed" para que el submenú esté cerrado por defecto -->
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Mision</a></li>
+                    </ul>
+                </li>              
+                <!-- Agrega este código en tu HTML dentro del elemento .submenu -->
+                <li class="submenu sucursales">
+                    <a href="#"><i class="fa-solid fa-caret-down arrow-icon"></i>Sucursales</a>
+                    <div class="spacer"></div>
+                    <ul class="sub-menu closed sucursales-menu"> <!-- Agrega la clase "closed" para que el submenú esté cerrado por defecto -->
+                        <li><a href="#">Casa Central</a></li>
+                        <li><a href="#">Catamarca</a></li>
+                        <li><a href="#">La Rioja</a></li>
+                        <li><a href="#">Mendoza</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contáctanos</a></li>
             </ul>
         </div>
 
@@ -89,7 +107,7 @@
     </main>
 
     <footer class="footer"> 
-        <p>Pagina Diseñada por @Marieldtt</p>
+        <p>Página Diseñada por @Marieldtt</p>
     </footer>
 </body>
 </html>
